@@ -4,3 +4,8 @@
 
 - Distro: PopOS 22.04 LTS com GNOME
 - Terminal: Tilix com modificações do Starship
+- Temas (Utilizando o Gnome-Tweaks):
+    - Aplicativos: Orchis-Grey-dark
+    - Cursor: Twilight-cursors
+    - Ícones: Papirus-Dark
+    - Shell: Orchis-Grey-Dark
