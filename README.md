@@ -40,3 +40,9 @@ init.lua
 ```
 ~/.zshrc
 ```
+
+- SSH
+
+```
+~/.ssh
+```
