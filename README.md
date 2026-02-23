@@ -6,14 +6,19 @@ Serve como documentação pessoal, backup das minhas configurações e guia de r
 ## Especificações do Sistema
 
 **Distro**: Pop!_OS 22.04 LTS com GNOME
+
 **Terminal**: Tilix + Starship
+
 **Shell**: Zsh
 
 ## Temas (via Gnome-Tweaks)
 
 **Aplicativos**: Orchis-Grey-Dark
+
 **Cursor**: Twilight-cursors
+
 **Ícones**: Papirus-Dark
+
 **Shell**: Orchis-Grey-Dark
 
 ## Instalar base do ambiente
