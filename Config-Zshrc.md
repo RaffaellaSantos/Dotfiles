@@ -37,3 +37,14 @@ Salva as mudanças
 ```
 source ~/.zshrc
 ```
+
+## Configuração do FastFetch (Informação do Sistema)
+
+```
+sudo apt install fastfetch
+```
+
+Acessar as configurações
+```
+~/.config/fastfetch/config.jsonc
+```s
