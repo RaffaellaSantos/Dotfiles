@@ -68,4 +68,3 @@ gsettings set org.gnome.desktop.interface cursor-theme "Twilight-cursors"
 # =============================
 echo "✅ Instalação concluída!"
 echo "Abra o GNOME Tweaks (Ajustes) → Aparência para verificar."
-
