@@ -209,7 +209,7 @@ Exemplo de config customizada:
 ```jsonc
 {
     "logo":{
-        "source": "/home/raffaellasf/Imagens/WPP/bokuto_logo.txt",
+        "source": "/home/user/Imagens/WPP/bokuto_logo.txt",
         "color": {
             "1": "0"
         },
