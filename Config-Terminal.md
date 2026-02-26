@@ -147,29 +147,46 @@ detect_folders = []
 Sugestão com pequenos ajustes:
 
 ```bash
-# Inicializa Starship
+# =========================
+# NVM (DEVE SER O PRIMEIRO)
+# =========================
+export NVM_DIR="$HOME/.nvm"
+
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  . "$NVM_DIR/nvm.sh"
+fi
+
+# =========================
+# PATHS PERSONALIZADOS
+# =========================
+export PATH="$HOME/bin:$PATH"
+
+# =========================
+# STARSHIP (SEMPRE DEPOIS)
+# =========================
 eval "$(starship init zsh)"
 
-# Comando digitado colorido
+# =========================
+# ZSH PLUGINS
+# =========================
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Alias úteis
+# =========================
+# ALIASES
+# =========================
 alias cls='clear'
+alias ll='exa -lah --icons'
+alias cat='batcat'
+alias qq='exit'
 
-# Histórico
+# =========================
+# HISTÓRICO
+# =========================
 HISTFILE=~/.zsh_history
 HISTSIZE=5000
 SAVEHIST=5000
 setopt appendhistory
 setopt sharehistory
-
-# Caminho de comandos
-export PATH="$HOME/bin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
 ```
 
 Salvar e aplicar:
