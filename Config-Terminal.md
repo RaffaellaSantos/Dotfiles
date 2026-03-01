@@ -55,14 +55,6 @@ starship --version
 
 ---
 
-## Instalar zsh-syntax-highlighting
-
-```bash
-sudo apt install zsh-syntax-highlighting
-```
-
----
-
 ## Instalar NVM (Node Version Manager)
 
 ```bash
@@ -80,6 +72,18 @@ Instalar última versão do Node:
 ```bash
 nvm install --lts
 ```
+
+---
+
+## Instalar Plugin Manager Zinit
+
+Para instalar o Zinit:
+
+```bash
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+```
+
+Para mais informações confira o repositório [Zinit](https://github.com/zdharma-continuum/zinit)
 
 ---
 
@@ -167,11 +171,6 @@ export PATH="$HOME/bin:$PATH"
 eval "$(starship init zsh)"
 
 # =========================
-# ZSH PLUGINS
-# =========================
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# =========================
 # ALIASES
 # =========================
 alias cls='clear'
@@ -187,6 +186,26 @@ HISTSIZE=5000
 SAVEHIST=5000
 setopt appendhistory
 setopt sharehistory
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+```
+
+Plugins adicionais do zinit
+
+```bash
+# =========================
+# Styling
+# =========================
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# ========================
+# PLUGINS
+# ========================
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-syntax-highlighting
+autoload -U compinit && compinit
 ```
 
 Salvar e aplicar:
@@ -292,5 +311,5 @@ alias cat='batcat'
 2. Instalar Zsh
 3. Definir Zsh como padrão
 4. Instalar Starship
-5. Instalar plugins do Zsh
+5. Instalar Gerenciador de Plugins
 6. Instalar FastFetch
